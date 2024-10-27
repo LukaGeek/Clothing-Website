@@ -1,0 +1,43 @@
+.topic {
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  transform: translate(-50%, -50%); /* Centers the text */
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.text1 {
+  position: absolute;
+  top: 37%;
+  left: 13%;
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.text2 {
+  position: absolute;
+  top: 43%;
+  left: 13%;
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.shop {
+  position: absolute;
+  top: 53%;
+  left: 13%;
+  background-color: red;
+  padding: 6px 25px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  font-size: small;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+
+.shop:hover {
+  background-color: rgb(194, 94, 94);
+  cursor: pointer;
+}

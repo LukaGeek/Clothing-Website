@@ -1,0 +1,97 @@
+.mainDiv {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  transition: top 0.3s;
+  height: 100px;
+  background-color: white;
+  padding: 0 20px;
+  border-bottom: 1px solid rgb(202, 197, 197);
+}
+
+.logo {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 15%;
+}
+
+.red {
+  color: red;
+}
+.logo:hover {
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 20%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav div:hover {
+  color: rgb(153, 153, 153);
+}
+
+.nav div::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: red;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.iconsDiv {
+  display: inline-block;
+  align-items: center;
+  position: relative;
+  margin-right: 15%;
+}
+
+.iconsDiv div {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  position: relative;
+}
+
+.icons {
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.icons:hover {
+  background-color: #f1f1f1;
+}
+
+.checkout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -9px;
+  left: 22px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fe4c50;
+  font-size: 12px;
+  color: #ffffff;
+}

@@ -1,0 +1,87 @@
+.mainDiv {
+  justify-content: center;
+  align-items: center;
+}
+
+/* For first card div */
+.image1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-right: 50%;
+  margin-left: 20%;
+  width: 320px;
+  height: 240px;
+}
+
+.text1 {
+  position: absolute;
+  background-color: white;
+  bottom: -7%;
+  padding: 10px 40px;
+  font-size: large;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.text1:hover {
+  color: rgb(153, 153, 153);
+}
+
+/* For second card div */
+
+.image2 {
+  display: flex;
+  justify-content: center;
+  margin-top: -12.6%;
+  margin-right: 50%;
+  margin-left: 40%;
+  width: 320px;
+  height: 240px;
+}
+
+.text2 {
+  position: absolute;
+  background-color: white;
+  bottom: -7%;
+  padding: 10px 40px;
+  font-size: large;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.text2:hover {
+  color: rgb(153, 153, 153);
+}
+
+/* For second card div */
+
+.image3 {
+  display: flex;
+  justify-content: center;
+  margin-top: -12.6%;
+  margin-right: 50%;
+  margin-left: 60%;
+  width: 320px;
+  height: 240px;
+}
+
+.text3 {
+  position: absolute;
+  background-color: white;
+  bottom: -7%;
+  padding: 10px 40px;
+  font-size: large;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.text3:hover {
+  color: rgb(153, 153, 153);
+}

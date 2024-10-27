@@ -1,0 +1,47 @@
+.mainDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 130px;
+  padding-left: 20%;
+  padding-right: 20%;
+  background-color: #f3f3f3;
+}
+
+.firstDiv h1 {
+  color: #282828;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.firstDiv span {
+  font-weight: inherit;
+  color: #746f6f;
+}
+
+.secondDiv input {
+  padding: 10px 60px;
+}
+
+.secondDiv button {
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-transform: capitalize;
+  cursor: pointer;
+  background-color: #ee3639;
+  color: white;
+  border: none;
+  transition: 0.3s;
+  border: none;
+}
+
+.secondDiv button:hover {
+  background-color: #ff9697;
+}
+
+.secondDiv input:focus {
+  border: 1px solid grey;
+  outline: none;
+}

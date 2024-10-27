@@ -1,0 +1,102 @@
+.mainDiv {
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.word {
+  margin-top: 5%;
+  font-weight: 500;
+  font-size: 40px;
+  color: #282828;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  margin-top: 10%;
+  width: 75px;
+  height: 5px;
+  background-color: #ff5a5a;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.imageContainer {
+  position: relative;
+  width: 350px;
+  height: 350px;
+}
+
+.overlay {
+  display: grid;
+  position: absolute;
+  top: 25px;
+  left: 55px;
+  width: 70%;
+  height: 60%;
+  background: rgba(255, 255, 255, 0.9);
+  color: #282828;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.imageContainer:hover .overlay {
+  opacity: 1;
+}
+
+.firstHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 40px;
+  font-size: 23px;
+}
+
+.secondHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 23px;
+  margin-top: -20px;
+}
+
+.firstUser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #51545f;
+}
+
+.firstButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff5a5a;
+  margin-top: -40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.firstButton:hover {
+  color: #d19a9a;
+}
