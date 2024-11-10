@@ -29,7 +29,7 @@ export default function Navbar() {
 
           <div className={classes.icons}>
             <FaCartShopping />
-            <span className={classes.checkout}>2</span>
+            {/* <span className={classes.checkout}>2</span> */}
           </div>
         </div>
       </div>

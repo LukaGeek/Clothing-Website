@@ -1,30 +1,32 @@
 .mainDiv {
-  align-items: center;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .header {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .word {
-  margin-top: 5%;
   font-weight: 500;
   font-size: 40px;
   color: #282828;
+  text-align: center;
 }
 
 .divider {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  margin-top: 10%;
   width: 75px;
   height: 5px;
   background-color: #ff5a5a;
+  margin-top: 10px;
 }
 
 .icons {
@@ -32,20 +34,24 @@
   justify-content: center;
   gap: 50px;
   margin-top: 50px;
+  flex-wrap: wrap;
 }
 
 .imageContainer {
   position: relative;
   width: 350px;
   height: 350px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
 .overlay {
   display: grid;
   position: absolute;
-  top: 25px;
-  left: 55px;
-  width: 70%;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
   height: 60%;
   background: rgba(255, 255, 255, 0.9);
   color: #282828;
@@ -53,50 +59,94 @@
   justify-content: center;
   opacity: 0;
   transition: opacity 0.3s ease;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
 }
 
 .imageContainer:hover .overlay {
   opacity: 1;
 }
 
-.firstHeader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  margin-top: 40px;
-  font-size: 23px;
-}
-
+.firstHeader,
 .secondHeader {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-weight: bold;
-  font-size: 23px;
-  margin-top: -20px;
+  font-size: 18px;
+  margin: 5px 0;
 }
 
 .firstUser {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 40px;
-  font-size: 15px;
+  font-size: 14px;
   text-transform: uppercase;
   color: #51545f;
 }
 
 .firstButton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #ff5a5a;
-  margin-top: -40px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: color 0.3s;
+  margin-top: 10px;
 }
 
 .firstButton:hover {
   color: #d19a9a;
+}
+
+@media (max-width: 1024px) {
+  .icons {
+    gap: 30px;
+  }
+
+  .imageContainer {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .word {
+    font-size: 32px;
+  }
+
+  .imageContainer {
+    width: 250px;
+    height: 250px;
+  }
+
+  .overlay {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    margin-top: 10%;
+  }
+
+  .word {
+    font-size: 28px;
+  }
+
+  .icons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .imageContainer {
+    width: 90%;
+    height: auto;
+  }
+
+  .overlay {
+    padding: 10px;
+  }
+
+  .firstHeader,
+  .secondHeader {
+    font-size: 16px;
+  }
+
+  .firstUser {
+    font-size: 12px;
+  }
 }

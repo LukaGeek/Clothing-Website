@@ -4,11 +4,10 @@
   align-items: center;
   background-color: #f3f3f3;
   padding: 20px;
-}
-
-.mainDiv {
-  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .div,
@@ -19,7 +18,9 @@
   align-items: center;
   background-color: #f3f3f3;
   padding: 20px;
-  width: 20%;
+  width: 22%;
+  box-sizing: border-box;
+  transition: width 0.3s ease;
 }
 
 .icon,
@@ -52,4 +53,67 @@
 .info2 span:nth-of-type(2),
 .info3 span:nth-of-type(2) {
   color: #51545f;
+}
+
+@media (max-width: 1024px) {
+  .div,
+  .div1,
+  .div2,
+  .div3 {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .div,
+  .div1,
+  .div2,
+  .div3 {
+    width: 100%;
+    padding: 15px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .icon,
+  .icon1,
+  .icon2,
+  .icon3 {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainDiv {
+    padding: 10px;
+  }
+
+  .div,
+  .div1,
+  .div2,
+  .div3 {
+    padding: 10px;
+  }
+
+  .icon,
+  .icon1,
+  .icon2,
+  .icon3 {
+    font-size: 24px;
+  }
+
+  .info span:first-of-type,
+  .info1 span:first-of-type,
+  .info2 span:first-of-type,
+  .info3 span:first-of-type {
+    font-size: 14px;
+  }
+
+  .info span:nth-of-type(2),
+  .info1 span:nth-of-type(2),
+  .info2 span:nth-of-type(2),
+  .info3 span:nth-of-type(2) {
+    font-size: 12px;
+  }
 }
