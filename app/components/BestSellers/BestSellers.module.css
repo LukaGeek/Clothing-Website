@@ -2,6 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  margin-top: 50px;
 }
 
 .word {
@@ -9,6 +11,7 @@
   font-weight: 500;
   font-size: 40px;
   color: #282828;
+  text-align: center;
 }
 
 .divider {
@@ -19,4 +22,34 @@
   width: 75px;
   height: 5px;
   background-color: #ff5a5a;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .mainDiv {
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+
+  .word {
+    font-size: 32px;
+    margin-top: 0;
+  }
+
+  .divider {
+    width: 50px;
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .word {
+    font-size: 28px;
+  }
+
+  .divider {
+    width: 40px;
+  }
 }

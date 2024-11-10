@@ -1,13 +1,13 @@
 .product {
   position: relative;
-  width: 12%;
+  width: 22%;
   height: 300px;
-  left: 15%;
   margin: 20px;
   cursor: pointer;
   border: 1px solid rgb(207, 207, 207);
   border-radius: 3px;
   transition: 0.3s;
+  display: inline-block;
 }
 
 .product:hover {
@@ -108,4 +108,32 @@
   box-shadow: 1px 0px 13px 0px rgba(0, 0, 0, 0.43);
   -webkit-box-shadow: 1px 0px 13px 0px rgba(0, 0, 0, 0.43);
   -moz-box-shadow: 1px 0px 13px 0px rgba(0, 0, 0, 0.43);
+}
+
+@media (max-width: 1024px) {
+  .product {
+    width: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .product {
+    width: 45%;
+    height: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product {
+    width: 90%;
+    height: 250px;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .product {
+    width: 100%;
+    height: 230px;
+  }
 }
